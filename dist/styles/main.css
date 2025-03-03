@@ -1,0 +1,132 @@
+.hero {
+  padding: 30vh 0;
+}
+.hero__form {
+  width: 400px;
+}
+@media (max-width: 768px) {
+  .hero__form {
+    margin: 0 auto;
+  }
+}
+.hero__form h1 {
+  text-align: center;
+}
+.hero__form p {
+  text-align: justify;
+}
+
+@font-face {
+  font-family: Fonte RDR;
+  src: url("/assets/chinese rocks rg.ttf");
+}
+.personagens {
+  margin: 20px 0px 40px;
+}
+.personagens h2 {
+  padding: 10px 0px;
+  text-align: center;
+}
+.personagens__grid {
+  display: grid;
+  grid-template-columns: 30% 65%;
+  column-gap: 5%;
+  padding-top: 20px;
+}
+.personagens__grid__nav__button {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  background: none;
+  color: #efe1bd;
+  font-size: 30px;
+  border: none;
+  padding: 4px 0px;
+  margin-bottom: 12px;
+  font-family: Fonte RDR;
+  border-bottom: 5px solid transparent;
+  cursor: pointer;
+}
+.personagens__grid__nav__button--is-active {
+  border-color: #e4141c;
+}
+.personagens__grid__main__list__item {
+  display: none;
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+}
+.personagens__grid__main__list__item h3 {
+  padding: 6px 0px;
+}
+.personagens__grid__main__list__item img {
+  height: 180px;
+  border-radius: 10%;
+}
+.personagens__grid__main__list__item p {
+  text-align: justify;
+}
+.personagens__grid__main__list__item--is-active {
+  display: block;
+}
+
+.historia {
+  padding: 30px 0px;
+}
+.historia h2 {
+  text-align: center;
+}
+.historia__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2%;
+}
+.historia__grid .text {
+  text-align: justify;
+}
+
+@font-face {
+  font-family: Fonte RDR;
+  src: url("/assets/chinese rocks rg.ttf");
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #312420;
+  color: #efe1bd;
+  font-family: Fonte RDR;
+}
+
+.container {
+  max-width: 1090px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.text--big {
+  font-size: 50px;
+}
+
+.text {
+  font-size: 16px;
+}
+
+.text--small {
+  font-size: 10px;
+}
+
+.fundo-hero {
+  background-image: url("/dist/image/fundo-header-personagens.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+}
+@media (max-width: 768px) {
+  .fundo-hero {
+    background-color: #312420;
+    background-image: none;
+  }
+}

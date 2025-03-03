@@ -1,0 +1,19 @@
+.hero{
+    padding: 30vh 0;
+
+    &__form{
+        width: 400px;
+        @media(max-width:768px){
+            margin: 0 auto;
+        }
+        
+
+        h1{
+            text-align: center;
+        }
+
+        p{
+            text-align: justify;
+        }
+    }
+}

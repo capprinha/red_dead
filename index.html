@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Dead Redemption II</title>
+    <link rel="stylesheet" href="./dist/styles/main.css">
+</head>
+<body>
+    <header class="fundo-hero">
+        <div class="container ">
+            <section class="hero">
+                <div class="hero__form">
+                    <h1 class="text--big">Red Dead<br>Redemption II</h1>
+                    <p class="text">A história começa em 1899, com a gangue em fuga após um assalto malsucedido.
+                    Arthur, o protagonista, é um homem dividido entre sua lealdade ao grupo e suas crescentes dúvidas sobre as decisões de Dutch, que se tornam cada vez mais erráticas e perigosas.
+                    Ao longo da narrativa, Arthur enfrenta dilemas morais, enquanto a gangue enfrenta pressões externas de caçadores de recompensas, agentes federais e outras facções criminosas.
+                    A trama é profundamente emocional, explorando temas como redenção, família, traição e a inevitabilidade das mudanças sociais e tecnológicas.
+                    O arco de Arthur também é impactado por sua saúde deteriorada, que o leva a refletir sobre seu legado e suas ações.</p>
+                </div>
+            </section>
+        </div>
+    </header>
+        <section class="historia container">
+            <h2 class="text--big">História</h2>
+            <main class="historia__grid">
+                <p class="text">Depois de tudo dar errado durante um roubo em uma cidade do oeste chamada Blackwater, Arthur Morgan e a gangue Van der Linde são forçados a fugir. Com agentes federais e os melhores caçadores de recompensa em seu encalço, a gangue precisa roubar, assaltar e lutar para sobreviver no impiedoso coração dos Estados Unidos. Conforme divisões profundas ameaçam despedaçar a gangue, Arthur deve fazer uma escolha entre os seus próprios ideais e a lealdade à gangue que criou</p>
+                <p class="text">Anos depois, John Marston, ex-membro da gangue e protagonista do primeiro jogo, tenta começar uma nova vida com sua esposa Abigail e seu filho Jack. No entanto, ele é forçado a voltar ao caminho da violência para eliminar Micah Bell, agora um criminoso perigoso. Com a ajuda de Sadie Adler e Charles Smith, John finalmente mata Micah e garante um novo começo para sua família, preparando o terreno para os eventos de Red Dead Redemption 1.</p>
+            </main>
+        </section>
+        <section class="personagens container">
+            <h2 class="text--big">- Personagens -</h2>
+            <div class="personagens__grid">
+                <nav class="personagens__grid__nav">
+                        <button data-tab-button="arthur" class="personagens__grid__nav__button personagens__grid__nav__button--is-active">Arthur</button>
+                        <button data-tab-button="john" class="personagens__grid__nav__button">John</button>
+                        <button data-tab-button="ducth" class="personagens__grid__nav__button">Dutch</button>
+                </nav>
+                <main class="personagens__grid__main">
+                    <ul class="personagens__grid__main__list">
+                        <li class="personagens__grid__main__list__item personagens__grid__main__list__item--is-active" data-tab-id="arthur">
+                            <h3 class="text--big">Arthur</h3>
+                            <img src="./dist/image/arthur-bibliografia.webp" alt="Arthur">
+                            <p class="text">
+                                Arthur Morgan simboliza a luta interna entre o bem e o mal em um mundo brutal.
+                                Sua jornada de autodescoberta e redenção é central para a história de RDR2, mostrando como mesmo aqueles que viveram uma vida de violência podem buscar redenção. 
+                                O destino de Arthur serve como um lembrete poderoso das consequências das escolhas e da possibilidade de mudança, mesmo nos momentos mais sombrios.
+                            </p>
+                        </li>
+                        <li class="personagens__grid__main__list__item" data-tab-id="john">
+                            <h3 class="text--big">John</h3>
+                            <img src="./dist/image/jonh.webp" alt="John">
+                            <p class="text">
+                                John Marston representa o arquétipo do anti-herói que deseja redenção.
+                                Sua história em RDR2 aprofunda suas motivações, preparando o terreno para os eventos do primeiro Red Dead Redemption, onde ele busca escapar de seu passado criminoso.
+                                O jogo destaca sua transformação, mostrando como suas experiências moldaram o homem que os jogadores encontram no título original.
+                            </p>
+                        </li>
+                        <li class="personagens__grid__main__list__item" data-tab-id="ducth">
+                            <h3 class="text--big">Dutch</h3>
+                            <img src="./dist/image/dutch.webp" alt="Dutch">
+                            <p class="text">
+                                Dutch simboliza o fim de uma era. Sua jornada em RDR2 ilustra a desintegração dos ideais do Velho Oeste, mostrando como até mesmo os líderes mais carismáticos podem sucumbir à ganância e à paranoia.
+                                Ele é um personagem trágico, cuja busca por liberdade se transforma em uma luta pelo poder, culminando na ruína da gangue e na traição de seus próprios valores.
+                            </p>
+                        </li>
+                    </ul>
+                </main>
+            </div>
+        </section>
+    
+    <script src="./dist/scripts/main.js"></script>
+</body>
+</html>

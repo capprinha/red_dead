@@ -1,0 +1,71 @@
+@use 'variaveis';
+
+@font-face {
+    font-family: Fonte RDR;
+    src: url('/assets/chinese\ rocks\ rg.ttf');
+}
+
+.personagens{
+    margin: 20px 0px 40px;
+
+    h2{
+        padding: 10px 0px;
+        text-align: center;
+    }
+    &__grid{
+        display: grid;
+        grid-template-columns: 30% 65%;
+        column-gap: 5%;
+        padding-top: 20px;
+
+        &__nav{
+            &__button{
+                display: block;
+                width: 90%;
+                margin: 0 auto;
+                background: none;
+                color:variaveis.$corTexto ;
+                font-size: 30px;
+                border: none;
+                padding: 4px 0px;
+                margin-bottom: 12px;
+                font-family: Fonte RDR;
+                border-bottom: 5px solid transparent;
+                cursor: pointer;
+
+                &--is-active{
+                    border-color: variaveis.$corHover;
+                }
+            } 
+        }
+
+        &__main{
+            &__list{
+                &__item{
+                    display: none;
+                    list-style: none;
+                    text-align: center;
+                    margin: 0 auto;
+                    h3{
+                        padding: 6px 0px;
+                    }
+                    img{
+                        height: 180px;
+                        border-radius: 10%;
+                    }
+                    p{
+                        text-align: justify;
+                    }
+
+                    &--is-active{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    
+
+
+}

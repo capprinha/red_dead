@@ -1,0 +1,51 @@
+@use 'variaveis';
+@use 'hero';
+@use 'personagens';
+@use 'historia';
+
+@font-face {
+    font-family: Fonte RDR;
+    src: url('/assets/chinese\ rocks\ rg.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin fonteText($font-size:16px){
+    font-size: $font-size;
+}
+body{
+    background-color:variaveis.$corDoFundo ;
+    color: variaveis.$corTexto;
+    font-family: Fonte RDR;
+    
+}
+
+.container{
+    max-width: 1090px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.text--big{
+    @include fonteText(50px)
+}
+.text{
+    @include fonteText(16px)
+}
+.text--small{
+    @include fonteText(10px)
+}
+.fundo-hero{
+    background-image: url('/dist/image/fundo-header-personagens.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+
+    @media(max-width:768px){
+        background-color: variaveis.$corDoFundo;
+        background-image: none;
+    }
+}
